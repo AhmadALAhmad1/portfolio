@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Providers } from '@/provider';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 export const metadata: Metadata = {
   title: '',
   description: '',
@@ -23,6 +24,7 @@ export default function RootLayout({
           <div className='flex min-h-screen flex-col bg-light text-dark transition-colors duration-300 selection:bg-accent-400 selection:text-dark dark:bg-dark dark:text-light'>
             <Navbar />
             <main>{children}</main>
+            <Footer/>
           </div>
         </Providers>
       </body>
