@@ -43,7 +43,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className='py-16'>
+    <div id='projects' className='py-16'>
       <div className='flex flex-col items-center'>
         <h1 className='text-3xl font-bold'>Projects</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>

@@ -3,12 +3,11 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import ThemeSwitch from './ThemeSwitch';
-import Image from 'next/image';
-import logo_a from '../../../public/images/logo.png';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
+  const text = '<A/>';
   const [nav, setNav] = useState(false);
-
   const links = [
     {
       id: 1,
@@ -29,54 +28,70 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='sticky mx-auto flex w-full items-center justify-between border-b px-6 py-1 sm:py-4 sm:px-10'>
+    <div className='sticky top-0 z-[999] mx-auto flex w-full items-center justify-between border-b-[1px] px-6 py-1 backdrop-blur-xl sm:px-12 sm:py-3'>
       <div className='flex items-center'>
         <Link href='/' className='z-40 text-3xl'>
-          <Image src={logo_a} alt='' width={60} height={30} />
+          <h1 className='text-[1.6rem] font-extrabold '> {text}</h1>
         </Link>
       </div>
 
-      <ul className='hidden flex-grow justify-center sm:flex'>
+      <ul className='hidden flex-grow justify-center gap-2 sm:flex'>
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className='e cursor-pointer rounded-lg p-3 px-4 font-medium capitalize transition duration-200 hover:bg-blue-400  hover:text-dark'
+            className='cursor-pointer rounded-lg p-2 px-4 font-medium capitalize hover:bg-cyan-500  hover:opacity-90'
           >
-            <Link href={link}>{link}</Link>
+            <Link href={`#${link}`}>{link}</Link>
           </li>
         ))}
       </ul>
 
       <div className='z-40 flex flex-wrap gap-6'>
-        <button className='hover:opacity-50'>
+        <button className='hover:opacity-60' title='Toggle Light/Dark Mode'>
           <ThemeSwitch />
         </button>
         <div
           onClick={() => setNav(!nav)}
-          className='z-40 flex cursor-pointer flex-wrap gap-4 sm:hidden'
+          className='z-40 flex cursor-pointer flex-wrap gap-4 rounded-md p-0.5 transition duration-200 hover:bg-neutral-100 hover:bg-opacity-30 sm:hidden'
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          <div className='rounded-md p-0.5 transition duration-200 hover:bg-neutral-700 hover:bg-opacity-30 '>
+            {nav ? <FaTimes size={26} /> : <FaBars size={26} />}
+          </div>
         </div>
       </div>
 
       {nav && (
         <>
-          <div
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
             onClick={() => setNav(false)}
-            className='fixed inset-0 z-20 bg-black bg-opacity-30 backdrop-blur-md'
-          ></div>
-          <ul className='absolute left-0 top-0 z-30 flex h-[50vh] w-full flex-col items-center justify-center bg-light text-dark dark:bg-dark dark:text-light'>
+            className='fixed inset-0 z-20'
+          ></motion.div>
+          <motion.ul
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className='absolute left-0 top-0 z-30 flex max-h-[70vh] w-full flex-col items-center justify-center space-y-7 border-b-[1px] bg-light py-10 pt-20 text-dark dark:bg-neutral-900 dark:text-light'
+          >
             {links.map(({ id, link }) => (
-              <li
+              <motion.li
                 key={id}
-                className='hover:dark cursor-pointer rounded-lg px-2 py-4 text-2xl capitalize transition duration-200  ease-in-out hover:bg-blue-400 hover:text-dark'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1, ease: 'easeInOut' }}
+                className='hover:dark cursor-pointer rounded-lg px-3 py-2 text-[1.6rem] capitalize transition duration-200 ease-in-out hover:bg-blue-400 hover:text-dark'
               >
-                <Link onClick={() => setNav(!nav)} href={link}>
+                <Link onClick={() => setNav(!nav)} href={`#${link}`}>
                   {link}
                 </Link>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </>
       )}
     </div>

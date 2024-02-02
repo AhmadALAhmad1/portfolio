@@ -18,7 +18,7 @@ const Skills = () => {
   );
 
   return (
-    <div className='py-16'>
+    <div id='skills' className='py-16'>
       <div className='flex flex-col items-center justify-center'>
         <h1 className='text-3xl font-bold'>Skills</h1>
         <p className='text-center'>

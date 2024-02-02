@@ -3,7 +3,7 @@ import React from 'react';
 import { IoMdCloudDownload } from 'react-icons/io';
 const Resume = () => {
   return (
-    <div className='py-16'>
+    <div id='resume' className='py-16'>
       <div className='flex flex-col items-center justify-center'>
         <h1 className='text-3xl font-bold'>Resume</h1>
         <p className='text-center'>
