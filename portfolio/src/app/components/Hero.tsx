@@ -6,7 +6,7 @@ import Lottie from 'lottie-react';
 import Typing from './TypeWriter';
 const Hero = () => {
   return (
-    <section className='grid grid-cols-1 items-center justify-between gap-x-6 gap-y-1 px-3 pt-4 lg:min-h-[80vh] lg:grid-cols-2'>
+    <section id='/' className='grid grid-cols-1 items-center justify-between gap-x-6 gap-y-1 px-3 pt-4 lg:min-h-[80vh] lg:grid-cols-2'>
       <div>
         <Typing />
         <section className='text-md'>
@@ -22,7 +22,7 @@ const Hero = () => {
           </span>
         </button>
       </div>
-      <div className=''>
+      <div>
         <Lottie
           animationData={animation_hero}
           className='-mt-5 h-[360px] sm:h-[500px] md:h-[600px] lg:mt-0 lg:h-full '
