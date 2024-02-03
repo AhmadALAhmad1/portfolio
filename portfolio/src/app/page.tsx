@@ -1,5 +1,5 @@
 import Hero from './components/Hero';
-import Container from './components/Container';
+import Container from './utils/Container';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Resume from './components/Resume';

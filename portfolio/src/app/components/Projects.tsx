@@ -1,44 +1,27 @@
-// Projects.tsx
 import React from 'react';
 import Card from './Card';
 const Projects = () => {
   const fakeData = [
     {
-      title: 'Project 1',
-      description: 'Description 1',
+      title: 'Portfolio',
       image: '/../../images/portfolio_web.png',
-      stack: 'MERN',
+      stack: 'Nextjs, Ts, TailwindCss',
+      sourceCode: 'https://github.com/AhmadALAhmad1/portfolio',
+      LiveDemo: '/',
     },
     {
-      title: 'Project 2',
-      description: 'Description 2',
+      title: 'E-commerce Gym Supplements Store',
       image: '/../../images/supplements_web.png',
       stack: 'MERN',
+      sourceCode: 'https://github.com/AhmadALAhmad1/E-commerce-Frontend',
+      LiveDemo: 'https://main--triple-a-supplements-store.netlify.app/',
     },
     {
-      title: 'Project 3',
-      description: 'Description 3',
+      title: 'E-commerce Photography Studio',
       image: '/../../images/photographer_web.png',
       stack: 'MERN',
-    },
-    {
-      title: 'Project 4',
-      description: 'Description 4',
-      image: '/../../images/portfolio_web.png',
-      stack: 'MERN',
-    },
-    {
-      title: 'Project 5',
-      description: 'Description 5',
-      image: '/../../images/portfolio_web.png',
-      stack: 'MERN',
-    },
-
-    {
-      title: 'Project 6',
-      description: 'Description 6',
-      image: '/../../images/portfolio_web.png',
-      stack: 'MERN',
+      sourceCode: 'https://github.com/AhmadALAhmad1/New-Photographer-front',
+      LiveDemo: 'https://master--jay-photographer.netlify.app/',
     },
   ];
 
@@ -46,7 +29,10 @@ const Projects = () => {
     <div id='projects' className='py-16'>
       <div className='flex flex-col items-center'>
         <h1 className='text-3xl font-bold'>Projects</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className='mt-2 text-center'>
+          Check out my latest projects below, spanning various technologies and
+          skills
+        </p>
       </div>
       <div className='grid grid-cols-1 items-center justify-center gap-8 pt-8 sm:grid-cols-2 lg:grid-cols-3'>
         {fakeData.map((project, index) => (
@@ -54,8 +40,9 @@ const Projects = () => {
             key={index}
             img={project.image}
             title={project.title}
-            description={project.description}
-            stack={project.stack}
+            stack={project.stack.split(',').map((stack) => stack.trim())} // Split stack string into an array
+            hrefSourceCode={project.sourceCode}
+            hrefLiveDemo={project.LiveDemo}
           />
         ))}
       </div>
