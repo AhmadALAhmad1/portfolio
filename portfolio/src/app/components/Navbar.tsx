@@ -28,10 +28,10 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='sticky top-0 z-[999] mx-auto flex w-full items-center justify-between border-b-[1px] px-6 py-1 backdrop-blur-xl sm:px-12 sm:py-3'>
+    <div className='sticky top-0 z-[999] mx-auto flex w-full items-center justify-between border-b-[0.5px] px-6  py-4 backdrop-blur-xl sm:px-12'>
       <div className='flex items-center'>
         <Link href='/' className='z-40 text-3xl'>
-          <h1 className='text-[1.6rem] font-extrabold '> {text}</h1>
+          <h1 className='text-2xl font-extrabold sm:text-[1.6rem] '> {text}</h1>
         </Link>
       </div>
 
@@ -75,7 +75,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className='absolute left-0 top-0 z-30 flex max-h-[70vh] w-full flex-col items-center justify-center space-y-7 border-b-[1px] bg-light py-10 pt-20 text-dark dark:bg-neutral-900 dark:text-light'
+            className='absolute left-0 top-0 z-30 flex max-h-[70vh] w-full flex-col items-center justify-center space-y-7 border-b-[0.5px] bg-light py-10 pt-20 text-dark dark:bg-neutral-900 dark:text-light'
           >
             {links.map(({ id, link }) => (
               <motion.li

@@ -6,9 +6,9 @@ const Typing = () => {
   const [firstTyperDone, setFirstTyperDone] = useState(false);
 
   return (
-    <h1 aria-hidden className=' max-w-max font-medium !leading-snug '>
+    <h1 aria-hidden className='max-w-max font-medium'>
       &nbsp;
-      <strong className='mb-4 flex text-3xl font-extrabold sm:text-5xl md:text-7xl'>
+      <strong className='mb-4 flex text-4xl font-extrabold sm:text-5xl md:text-7xl'>
         {firstTyperDone ? (
           <>I&apos;m Ahmad.</>
         ) : (
@@ -42,14 +42,14 @@ const Typing = () => {
           <Typewriter
             options={{ delay: 80, deleteSpeed: 20 }}
             onInit={(typewriter) => {
-              const stringToDelete = 'cooler...';
+              const stringToDelete = 'unique...';
               typewriter
                 .pauseFor(500)
                 .typeString(stringToDelete)
                 .pauseFor(1000)
                 .deleteChars(stringToDelete.length)
                 .pauseFor(250)
-                .typeString('greater place.')
+                .typeString('creative space.')
                 .start();
             }}
           />
