@@ -1,11 +1,11 @@
 import SensorsOutlinedIcon from '@mui/icons-material/SensorsOutlined';
 import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 
 interface Props {
-  img: string;
+  img: StaticImageData;
   title: string;
   description?: string;
   stack: string[];

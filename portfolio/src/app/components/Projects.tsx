@@ -1,24 +1,27 @@
 import React from 'react';
 import Card from './Card';
+import gymScreen from '../../../public/images/supplements_web.png';
+import photographerScreen from '../../../public/images/photographer_web.png.png';
+import portfolioScreen from '../../../public/images/portfolio_web.png.png';
 const Projects = () => {
   const fakeData = [
     {
       title: 'Portfolio',
-      image: '/images/portfolio_web.png',
+      image: portfolioScreen,
       stack: 'Nextjs, Ts, TailwindCss',
       sourceCode: 'https://github.com/AhmadALAhmad1/portfolio',
       LiveDemo: 'https://www.alahmad.dev/',
     },
     {
       title: 'E-commerce Gym Supplements Store',
-      image: '/images/supplements_web.png',
+      image: gymScreen,
       stack: 'MERN',
       sourceCode: 'https://github.com/AhmadALAhmad1/E-commerce-Frontend',
       LiveDemo: 'https://main--triple-a-supplements-store.netlify.app/',
     },
     {
       title: 'E-commerce Photography Studio',
-      image: '/images/photographer_web.png',
+      image: photographerScreen,
       stack: 'MERN',
       sourceCode: 'https://github.com/AhmadALAhmad1/New-Photographer-front',
       LiveDemo: 'https://master--jay-photographer.netlify.app/',
