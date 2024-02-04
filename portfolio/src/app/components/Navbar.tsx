@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import ThemeSwitch from './ThemeSwitch';
 import { motion } from 'framer-motion';
+import SvgLogo from './LogoSvg';
 
 const Navbar = () => {
-  const text = '<A/>';
   const [nav, setNav] = useState(false);
   const links = [
     {
@@ -28,20 +28,22 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='sticky top-0 z-[999] mx-auto flex w-full items-center justify-between border-b-[0.5px] px-6  py-4 backdrop-blur-xl sm:px-12'>
+    <div className='sticky top-0 z-[999] mx-auto flex w-full items-center justify-between border-b-[0.5px] px-6  py-5 backdrop-blur-3xl  dark:backdrop-blur-xl  sm:px-8'>
       <div className='flex items-center'>
-        <Link href='/' className='z-40 text-3xl'>
-          <h1 className='text-2xl font-extrabold sm:text-[1.6rem] '> {text}</h1>
+        <Link href='/' className='z-40'>
+          <SvgLogo />
         </Link>
       </div>
 
       <ul className='hidden flex-grow justify-center gap-2 sm:flex'>
         {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className='cursor-pointer rounded-lg p-2 px-4 font-medium capitalize hover:bg-cyan-500  hover:opacity-90'
-          >
-            <Link href={`#${link}`}>{link}</Link>
+          <li key={id}>
+            <Link
+              className='cursor-pointer rounded-lg p-3 px-4 font-medium capitalize hover:bg-cyan-500 hover:opacity-90'
+              href={`#${link}`}
+            >
+              {link}
+            </Link>
           </li>
         ))}
       </ul>

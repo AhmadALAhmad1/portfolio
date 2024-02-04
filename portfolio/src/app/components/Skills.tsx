@@ -25,11 +25,11 @@ const Skills = () => {
           Explore the range of skills I bring to the table
         </p>
       </div>
-      <div className='flex flex-wrap justify-center gap-4 space-y-2 sm:space-y-0 px-10 pt-8 text-[2.5em] sm:text-[3.5em]'>
+      <div className='flex flex-wrap justify-center gap-4 gap-y-4 px-10 pt-8 text-[2.5em] sm:space-y-0 sm:text-[3.5em]'>
         <SiVisualstudiocode
           className={cn(IconsClass, 'hover:text-blue-500 ')}
         />
-        <TbBrandNextjs className={cn(IconsClass)} />
+        <TbBrandNextjs className={cn(IconsClass, 'hover:text-black')} />
         <DiReact className={cn(IconsClass, 'hover:text-cyan-500 ')} />
         <SiJavascript className={cn(IconsClass, 'hover:text-yellow-500 ')} />
         <SiTypescript className={cn(IconsClass, 'hover:text-blue-400 ')} />

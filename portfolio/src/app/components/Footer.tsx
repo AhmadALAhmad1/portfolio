@@ -12,16 +12,20 @@ const Footer = () => {
     'group rounded-xl  bg-neutral-300 p-3 duration-300 hover:shadow-md hover:shadow-dark  dark:bg-neutral-800 dark:hover:shadow-light';
   return (
     <div className='flex items-center justify-center border-t-[1px] font-semibold'>
-      <div className='py-5'>
-        <Link target='_blank' href='https://nextjs.org/'>
-          <button className='text-md flex items-center gap-1 px-10 hover:text-cyan-500 hover:underline'>
+      <div className='py-5 '>
+        <div className='flex justify-center'>
+          <Link
+            target='_blank'
+            href='https://nextjs.org/'
+            className='text-md flex items-center gap-1  hover:text-cyan-500 hover:underline'
+          >
             Powered by
             <span>
               <TbBrandNextjs className='text-[1.3rem]' />
             </span>
-          </button>
-        </Link>
-        <div className='mt-4 flex items-center justify-center gap-7 text-[1.7rem] flex-wrap'>
+          </Link>
+        </div>
+        <div className='mt-4 flex flex-wrap items-center justify-center gap-7 text-[1.7rem]'>
           <Link
             target='_blank'
             href='https://github.com/AhmadALAhmad1'
