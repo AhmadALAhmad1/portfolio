@@ -4,21 +4,21 @@ const Projects = () => {
   const fakeData = [
     {
       title: 'Portfolio',
-      image: '/../../images/portfolio_web.png',
+      image: '/images/portfolio_web.png',
       stack: 'Nextjs, Ts, TailwindCss',
       sourceCode: 'https://github.com/AhmadALAhmad1/portfolio',
-      LiveDemo: '/',
+      LiveDemo: 'https://www.alahmad.dev/',
     },
     {
       title: 'E-commerce Gym Supplements Store',
-      image: '/../../images/supplements_web.png',
+      image: '/images/supplements_web.png',
       stack: 'MERN',
       sourceCode: 'https://github.com/AhmadALAhmad1/E-commerce-Frontend',
       LiveDemo: 'https://main--triple-a-supplements-store.netlify.app/',
     },
     {
       title: 'E-commerce Photography Studio',
-      image: '/../../images/photographer_web.png',
+      image: '/images/photographer_web.png',
       stack: 'MERN',
       sourceCode: 'https://github.com/AhmadALAhmad1/New-Photographer-front',
       LiveDemo: 'https://master--jay-photographer.netlify.app/',
