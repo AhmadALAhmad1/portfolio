@@ -4,8 +4,8 @@ const SvgLogo = () => {
   return (
     <div>
       <svg
-        width='140'
-        height='47'
+        width='125'
+        height='45'
         viewBox='0 0 313 87'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

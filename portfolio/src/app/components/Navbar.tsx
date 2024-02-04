@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import ThemeSwitch from './ThemeSwitch';
 import { motion } from 'framer-motion';
-import SvgLogo from './LogoSvg';
+import SvgLogo from '../../../public/icons/LogoSvg';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='sticky top-0 z-[999] mx-auto flex w-full items-center justify-between border-b-[0.5px] px-6  py-5 backdrop-blur-3xl  dark:backdrop-blur-xl  sm:px-8'>
+    <div className='sticky top-0 z-[999] mx-auto flex w-full items-center justify-between border-b-[0.5px] px-6 py-4 backdrop-blur-3xl  dark:backdrop-blur-xl  sm:px-8'>
       <div className='flex items-center'>
         <Link href='/' className='z-40'>
           <SvgLogo />

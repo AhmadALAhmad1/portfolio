@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from './Card';
 import gymScreen from '../../../public/images/supplements_web.png';
-import photographerScreen from '../../../public/images/photographer_web.png.png';
-import portfolioScreen from '../../../public/images/portfolio_web.png.png';
+import photographerScreen from '../../../public/images/photographer_web.png';
+import portfolioScreen from '../../../public/images/portfolio_web.png';
 const Projects = () => {
   const fakeData = [
     {
