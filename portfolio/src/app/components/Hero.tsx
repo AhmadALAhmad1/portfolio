@@ -17,20 +17,14 @@ const Hero = () => {
       <div>
         <Typing />
         <section className='md:text-lg'>
-          <h3 className='max-w-[55ch] '>
-            I&apos;m a passionate
-            <b className='text-cyan-600 dark:text-cyan-600'>
-              Full-Stack Engineer
-            </b>
-            with a rich background spanning two years of dedicated experience.
-            Proficient in both
-            <b className='text-cyan-600 dark:text-cyan-600'>MERN</b> and
-            <b className='text-cyan-600 dark:text-cyan-600'> LAMP </b>
-            stacks, I specialize in crafting high-quality web applications that
-            are not only visually appealing but also scalable and efficient. My
-            journey of development has equipped me with the skills to transform
-            ideas into reality, ensuring seamless user experiences. Let&apos;s
-            create something extraordinary together.
+          <h3 className='max-w-[55ch] indent-3'>
+            I&apos;m an Experienced
+            <b className='text-cyan-500'> Full-Stack Engineer </b> skilled in
+            <b className='text-cyan-500'> MERN</b> and
+            <b className='text-cyan-500'> LAMP </b> stacks, dedicated to
+            crafting visually appealing, scalable, and efficient web
+            applications. Proficient with a two-year background, adept at
+            transforming ideas into seamless user experiences.
           </h3>
         </section>
         <div className='mt-4 flex flex-wrap items-center gap-3 gap-y-4'>
