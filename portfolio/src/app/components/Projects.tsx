@@ -4,7 +4,7 @@ import gymScreen from '../../../public/images/supplements_web.png';
 import photographerScreen from '../../../public/images/photographer_web.png';
 import portfolioScreen from '../../../public/images/portfolio_web.png';
 const Projects = () => {
-  const fakeData = [
+  const data = [
     {
       title: 'Portfolio',
       image: portfolioScreen,
@@ -38,7 +38,7 @@ const Projects = () => {
         </p>
       </div>
       <div className='grid grid-cols-1 items-center justify-center gap-8 pt-8 sm:grid-cols-2 lg:grid-cols-3'>
-        {fakeData.map((project, index) => (
+        {data.map((project, index) => (
           <Card
             key={index}
             img={project.image}
