@@ -8,15 +8,6 @@ import Card2 from './Card2';
 const Projects2 = () => {
   const data = [
     {
-      title: 'Weather App',
-      description:
-        'Explore weather with elegance and ease. Enjoy a stylish UI, user-friendly design, and detailed hourly forecasting',
-      stack: 'Nextjs, Ts, TailwindCss',
-      image: weatherapp,
-      sourceCode: 'https://github.com/AhmadALAhmad1/Weather-App',
-      LiveDemo: 'https://weather-app-five-delta-59.vercel.app/',
-    },
-    {
       title: 'Portfolio',
       description:
         "Welcome to my Portfolio, where I showcase my best work as a developer. Explore my projects and skills in a simple, yet captivating way. Click around and see what I've been up to!",
@@ -42,6 +33,15 @@ const Projects2 = () => {
       image: photographer,
       sourceCode: 'https://github.com/AhmadALAhmad1/New-Photographer-front',
       LiveDemo: 'https://master--jay-photographer.netlify.app/',
+    },
+    {
+      title: 'Weather App',
+      description:
+        'Explore weather with elegance and ease. Enjoy a stylish UI, user-friendly design, and detailed hourly forecasting',
+      stack: 'Nextjs, Ts, TailwindCss',
+      image: weatherapp,
+      sourceCode: 'https://github.com/AhmadALAhmad1/Weather-App',
+      LiveDemo: 'https://weather-app-five-delta-59.vercel.app/',
     },
   ];
   return (
