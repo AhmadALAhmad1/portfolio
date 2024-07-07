@@ -29,7 +29,7 @@ const Skills = () => {
         <SiVisualstudiocode
           className={cn(IconsClass, 'hover:text-blue-500 ')}
         />
-        <TbBrandNextjs className={cn(IconsClass, 'hover:text-black')} />
+        <TbBrandNextjs className={cn(IconsClass, 'hover:text-accent-50')} />
         <DiReact className={cn(IconsClass, 'hover:text-cyan-500 ')} />
         <SiJavascript className={cn(IconsClass, 'hover:text-yellow-500 ')} />
         <SiTypescript className={cn(IconsClass, 'hover:text-blue-400 ')} />

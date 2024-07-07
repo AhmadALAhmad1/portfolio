@@ -27,7 +27,8 @@ const Resume = () => {
       </div>
       <div className='mt-5 flex justify-center'>
         <iframe
-          src='https://drive.google.com/file/d/1JNK_cOHmbIzC99m_ut0-PNqNf-bT3huP/preview'
+          // src='https://drive.google.com/file/d/1JNK_cOHmbIzC99m_ut0-PNqNf-bT3huP/preview'
+          src='https://drive.google.com/file/d/170teTMNbrF7-kc3H0Ms9-VrgzfHDHpXJ/preview'
           title='resume'
           className='min-h-[50rem] w-[100%] rounded-xl sm:w-[70%] md:w-[80%] '
           loading='lazy'
