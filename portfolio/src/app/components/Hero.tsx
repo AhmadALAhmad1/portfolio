@@ -19,7 +19,7 @@ const Hero = () => {
         <section className='md:text-lg'>
           <h3 className='max-w-[55ch] indent-3'>
             I&apos;m an Experienced
-            <b className='text-cyan-500'> Full-Stack Engineer </b> skilled in
+            <b className='text-cyan-500'> Software Engineer </b> skilled in
             <b className='text-cyan-500'> MERN</b> and
             <b className='text-cyan-500'> LAMP </b> stacks, dedicated to
             crafting visually appealing, scalable, and efficient web
