@@ -23,7 +23,7 @@ const Hero = () => {
             <b className='text-cyan-500'> MERN</b> and
             <b className='text-cyan-500'> LAMP </b> stacks, dedicated to
             crafting visually appealing, scalable, and efficient web
-            applications. Proficient with a two-year background, adept at
+            applications. Proficient with a four-year background, adept at
             transforming ideas into seamless user experiences.
           </h3>
         </section>
